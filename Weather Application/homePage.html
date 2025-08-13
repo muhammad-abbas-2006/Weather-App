@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="./picture/app-logo.jfif" rel="icon">
+</head>
+<body>
+
+    <!-- navbar work start -->
+<nav class="navbar bg-light p-3">
+  <div class="container-fluid">
+    <div class="d-flex w-100">
+      <input id="search" class="form-control me-2 search-input" type="search" placeholder="Search for country weather..." aria-label="Search"/>
+      <button id="search-btn" class="btn btn-primary search-btn">
+        <i class="fas fa-search"></i>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div class="main-img text-center">
+    <img src="./picture/img2.jfif" alt="" class="img-fluid">
+    <h1 class="temp" id="temp"></h1>
+    <h1 class="head-para" id="name"></h1>
+    
+    <div class="d-flex justify-content-center gap-5">
+    <div class="text-center">
+        <h1>feels_like <span id="feels-like"></span></h1>
+    </div>
+    <div class="text-center">
+        <h1>Humidity <span id="humidity"></span></h1>
+    </div>
+</div>
+</div>
+
+<br>
+<div class="last-div">
+    <div class="d-flex justify-content-around">
+        <h3>Today</h3>
+        <h3 id="date"><span id="time"></span></h3>
+        <h3 id="C-date"></h3>
+    </div>
+    <hr>
+
+    <div class="last-card d-flex justify-content-around">
+        
+        <div class="card1">
+            <h4 id="mon">27.6&#8451</h4>
+            <img src="./picture/sun.gif" alt="">
+        </div>
+        <div class="card1">
+            <h4 id="tue">20.5&#8451</h4>
+            <img src="./picture/sun-cloud2.gif" alt="">
+        </div>
+        <div class="card1">
+            <h4 id="wed">18&#8451</h4>
+            <img src="./picture/rain.gif" alt="">
+        </div>
+        <div class="card1">
+            <h4 id="thus">19.5&#8451</h4>
+            <img src="./picture/rain-sun2.gif" alt="">
+        </div>
+        
+        
+
+    </div>
+
+</div>
+    <script src="app.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

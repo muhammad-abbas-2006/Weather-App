@@ -1,0 +1,120 @@
+
+.search-input {
+    flex: 1;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: 2px solid #d48be0;
+    transition: all 0.3s ease;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #3a2072;
+    box-shadow: 0 0 10px rgba(218, 72, 200, 0.5);
+}
+
+.search-btn {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Make search bar full width on small screens */
+@media (max-width: 768px) {
+    .search-input {
+        border-radius: 20px;
+    }
+    .search-btn {
+        border-radius: 20px;
+        width: auto;
+        padding: 0 15px;
+    }
+}
+
+.main-img > img{
+    /* border: 1px solid black; */
+    height: 35vh;
+}
+.main-img > .temp{
+    font-size: 65px;
+}
+.main-img > .head-para{
+    font-weight: 900;
+}
+.main-img > .para{
+    font-weight: lighter;
+}
+.text-center > h1{
+    font-weight: lighter;
+}
+#max{
+    font-weight: 500;
+}
+#min{
+    font-weight: 500;
+}
+/* .last-div{
+    padding: 10px;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 25px;
+    height: 25vh;
+    width: 40%;
+} */
+
+.last-div {
+    padding: 10px;
+    margin: auto;
+    border-radius: 25px;
+    height: 25vh;
+    width: 40%;
+    border: none;
+    box-shadow: 0 4px 20px rgba(212, 139, 224, 0.6),
+                0 -4px 20px rgba(58, 32, 114, 0.5);
+}
+
+
+.last-div > div > h3{
+    font-weight: 400;
+}
+.card1 > img{
+    height: 10vh;
+}
+@media (max-width: 1300px) {
+    .last-div {
+        width: 58%;
+        height: auto; /* Let height adjust automatically */
+    }
+    .card1 img {
+        height: 10vh; /* Slightly smaller for mobile */
+    }
+}
+
+/* Responsive styles for small screens */
+@media (max-width: 768px) {
+    .last-div {
+        width: 94%;
+        height: auto; /* Let height adjust automatically */
+    }
+
+    .last-card {
+        flex-wrap: nowrap; /* Keep cards in one row */
+        /* overflow-x: auto; Allow scroll if needed */
+    }
+
+    .card1 {
+        flex: 0 0 25%; /* Each card takes 25% width */
+        text-align: center;
+    }
+
+    .card1 img {
+        height: 10vh; /* Slightly smaller for mobile */
+    }
+}
+
+
+
